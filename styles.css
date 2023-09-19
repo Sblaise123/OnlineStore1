@@ -1,0 +1,673 @@
+@import url(http://fonts.googleapi.com/css2?fmaily=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+button.black{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+
+
+body {
+    width: 100%;
+}
+
+#header {
+    background-color: #333; 
+    color: #fff; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+.logo {
+    
+    margin-right: 20px; 
+}
+
+/* Style the navbar */
+#navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    display: inline-block;
+    position: relative;
+}
+
+#navbar li:not(:last-child) {
+    margin-right: 20px; /* Add margin between list items except for the last one */
+}
+
+#navbar li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Set link color to white */
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Customize the font size */
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: blue;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: blue;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+#navbar li a i {
+    font-size: 20px; /* Customize the icon size */
+}
+
+#hero{
+    background-image: url(https://img.freepik.com/free-photo/young-millennial-african-boy-city-happy-black-man-jeans-jacket-generation-z-concept_627829-7285.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: navy;
+}
+
+#hero p{
+    color: #fff;
+}
+
+#hero button{
+    background-image: url(https://i.pinimg.com/736x/74/17/e3/7417e3a8668b37fd0d702ef011459a4f.jpg);
+    color: #222;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70,62,221, 0.1);
+}
+
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:#fff;
+    background-color: dodgerblue;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0, 0.02);
+    margin: 15px 0;
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color:  rgba(243,181,25);
+}
+
+#banner {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDlbqKkquejW_OCsSuROLsv-K-USb3l6vaQ&usqp=CAU);
+}
+
+#banner h2 span {
+    color: red;
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/028/714/265/small/fashion-week-male-model-isolated-on-gradient-background-with-a-place-for-text-photo.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url(https://www.spyne.ai/blogs/wp-content/uploads/2023/02/ezgif-2-8d7656c884-1024x576.webp);
+
+}
+
+#sm-banner h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button {
+    background: #088178;
+    border: 1px solid #088178;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/028/714/265/small/fashion-week-male-model-isolated-on-gradient-background-with-a-place-for-text-photo.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 h2{
+    color: #000;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3 {
+    color: #000;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner3 .banner-box2 {
+    background-image: url(https://media.istockphoto.com/id/1257563298/photo/fashion-clothes-on-a-rack-in-a-light-background-indoors-place-for-text.jpg?s=170667a&w=0&k=20&c=noFFaO69jpEfc08V7Y0Th9Y10yQHzTYFNzkwo1esY9U=);
+
+}
+
+#banner3 .banner-box3 {
+    background-image: url(data:image/jpeg;base64,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);
+
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/013/087/515/small/illustration-grid-pattern-blue-abstract-background-for-ecommerce-signsretail-shopping-advertisement-business-agency-ads-campaign-marketing-email-newsletter-landing-pages-header-webs-motion-vector.jpg);
+    background-repeat: repeat;
+    background-position: 20% 30%;
+}
+
+#newsletter h4 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#newsletter:hover button {
+    background: black;
+    border: 1px solid white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#page-header {
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/981/878/desktop-wallpaper-flex-banner-backgrounds-design-banner-backgrounds.jpg);
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#page-header h2 {
+    color: #fff;
+}
+
+#page-header p {
+    color: aliceblue;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+    background: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+#page-header.blog-header {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-simple-creative-reading-book-banner-image_194503.jpg);
+}
+
+#page-header.blog-header h2,
+#page-header.blog-header p {
+    color: #000;
+}
+
+#blog{
+    padding: 150px 0 150px 150px
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 90px;
+}
+
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+}
+
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover{
+    color: #088178;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+#page-header.about-header{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-app{
+    text-align: center;
+}
+
+#about-app .img{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span {
+    font-size: 12px;
+}
+
+#contact-details .details h2 {
+    font-size: 26px;
+    line-height: 25px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
